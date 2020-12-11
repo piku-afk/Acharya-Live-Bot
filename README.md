@@ -15,7 +15,7 @@ After cloning the repo, open `aliveBot.js`, and enter your AUID and password in 
 
 ![details.png](https://raw.githubusercontent.com/piku-afk/Acharya-Live-Bot/main/details.png)
 
-Now you are good to go. Whenever you want to start the bot, come to the same folder and open cmd and type the following command.
+Now you are good to go. Whenever you want to start the bot, come to the same folder, open cmd and type the following command.
 ```
 C:/folder/where/you/cloned/the/repository> node aliveBot.js
 ```
