@@ -37,6 +37,9 @@ const schedule = require('node-schedule');
 const scheduler = scheduleBot();
 // console.log(scheduler);
 const firstClass = scheduler[0].sTime;
+if(!firstClass) {
+  return;
+}
 console.log(`bot will start at ${firstClass}`);
 // scheduler for classes
 scheduler.forEach(item => {
@@ -77,7 +80,7 @@ function scheduleBot() {
   const firstClass = newTime[0];
   if(!firstClass) {
     console.log('no more classes for today')
-    return [];
+    return [{sTime: ''}];
   }
   if(currentTime < firstClass.sTime) {
     return newTime
